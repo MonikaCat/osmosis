@@ -45,7 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Features
 
-- [#724](https://github.com/osmosis-labs/osmosis/pull/724) Make an ante-handler filter for recognizing High gas txs, and having a min gas price for them.
+- Update to Tendermint v0.34.15
+- Increase p2p timeouts to alleviate p2p network breaking at epoch
 - [#741](https://github.com/osmosis-labs/osmosis/pull/741) Allow node operators to set a second min gas price for arbitrage txs.
 - [#623](https://github.com/osmosis-labs/osmosis/pull/623) Use gosec for staticly linting for common non-determinism issues in SDK applications.
 
@@ -63,7 +64,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#655](https://github.com/osmosis-labs/osmosis/pull/655) Make the default genesis for pool-incentives work by default
 - [97ac2a8](https://github.com/osmosis-labs/osmosis/commit/97ac2a86303fc8966a4c169107e0945775107e67) Fix InitGenesis bug for gauges
 - [#686](https://github.com/osmosis-labs/osmosis/pull/686) Add silence usage to cli to surpress unnecessary help logs
-- [#731](https://github.com/osmosis-labs/osmosis/pull/731) Add UpdateFeeToken proposal handler to app.go
 
 ### SDK fork updates
 
@@ -126,7 +126,6 @@ Upgrade instructions for node operators can be found [here](https://github.com/o
 * [\#464](https://github.com/osmosis-labs/osmosis/pull/464) Increase maximum outbound peers for validator nodes
 * [\#444](https://github.com/osmosis-labs/osmosis/pull/444) Add script for state sync
 * [\#409](https://github.com/osmosis-labs/osmosis/pull/409) Reduce epoch time growth rate for re-locking assets
-
 
 ## [v4.0.0]
 

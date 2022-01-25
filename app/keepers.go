@@ -56,9 +56,6 @@ import (
 	poolincentives "github.com/osmosis-labs/osmosis/x/pool-incentives"
 	poolincentiveskeeper "github.com/osmosis-labs/osmosis/x/pool-incentives/keeper"
 	poolincentivestypes "github.com/osmosis-labs/osmosis/x/pool-incentives/types"
-	superfluidkeeper "github.com/osmosis-labs/osmosis/x/superfluid/keeper"
-	superfluidtypes "github.com/osmosis-labs/osmosis/x/superfluid/types"
-	"github.com/osmosis-labs/osmosis/x/txfees"
 	txfeeskeeper "github.com/osmosis-labs/osmosis/x/txfees/keeper"
 	txfeestypes "github.com/osmosis-labs/osmosis/x/txfees/types"
 )
@@ -213,10 +210,8 @@ func (app *OsmosisApp) InitNormalKeepers() {
 
 	app.LockupKeeper = lockupkeeper.NewKeeper(
 		appCodec, keys[lockuptypes.StoreKey],
-		// TODO: Visit why this needs to be deref'd
-		*app.AccountKeeper,
-		app.BankKeeper,
-		app.DistrKeeper)
+		app.AccountKeeper,
+		app.BankKeeper)
 
 	app.EpochsKeeper = epochskeeper.NewKeeper(appCodec, keys[epochstypes.StoreKey])
 
@@ -224,10 +219,6 @@ func (app *OsmosisApp) InitNormalKeepers() {
 		appCodec, keys[incentivestypes.StoreKey],
 		app.GetSubspace(incentivestypes.ModuleName),
 		app.BankKeeper, app.LockupKeeper, app.EpochsKeeper)
-
-	app.SuperfluidKeeper = *superfluidkeeper.NewKeeper(
-		appCodec, keys[superfluidtypes.StoreKey], app.GetSubspace(superfluidtypes.ModuleName),
-		*app.AccountKeeper, app.BankKeeper, app.StakingKeeper, app.DistrKeeper, app.EpochsKeeper, app.LockupKeeper, gammKeeper, app.IncentivesKeeper)
 
 	mintKeeper := mintkeeper.NewKeeper(
 		appCodec, keys[minttypes.StoreKey],
@@ -267,8 +258,7 @@ func (app *OsmosisApp) InitNormalKeepers() {
 		AddRoute(upgradetypes.RouterKey, upgrade.NewSoftwareUpgradeProposalHandler(*app.UpgradeKeeper)).
 		AddRoute(ibchost.RouterKey, ibcclient.NewClientProposalHandler(app.IBCKeeper.ClientKeeper)).
 		AddRoute(poolincentivestypes.RouterKey, poolincentives.NewPoolIncentivesProposalHandler(*app.PoolIncentivesKeeper)).
-		AddRoute(bech32ibctypes.RouterKey, bech32ibc.NewBech32IBCProposalHandler(*app.Bech32IBCKeeper)).
-		AddRoute(txfeestypes.RouterKey, txfees.NewUpdateFeeTokenProposalHandler(*app.TxFeesKeeper))
+		AddRoute(bech32ibctypes.RouterKey, bech32ibc.NewBech32IBCProposalHandler(*app.Bech32IBCKeeper))
 
 	govKeeper := govkeeper.NewKeeper(
 		appCodec, keys[govtypes.StoreKey],
@@ -287,9 +277,7 @@ func (app *OsmosisApp) SetupHooks() {
 		stakingtypes.NewMultiStakingHooks(
 			app.DistrKeeper.Hooks(),
 			app.SlashingKeeper.Hooks(),
-			app.ClaimKeeper.Hooks(),
-			app.SuperfluidKeeper.Hooks(),
-		),
+			app.ClaimKeeper.Hooks()),
 	)
 
 	app.GAMMKeeper.SetHooks(
@@ -302,8 +290,7 @@ func (app *OsmosisApp) SetupHooks() {
 
 	app.LockupKeeper.SetHooks(
 		lockuptypes.NewMultiLockupHooks(
-			// insert lockup hooks receivers here
-			app.SuperfluidKeeper.Hooks(),
+		// insert lockup hooks receivers here
 		),
 	)
 

@@ -177,9 +177,9 @@ module.exports = {
           collapsable: false,
         },
         {
-          title: 'Chain Developer Guide',
+          title: 'Developer Guide',
           children: [
-            '/developing/chain-dev-guide',
+            '/developing/dev-guide',
             '/developing/cli/',
             '/developing/cli/install',
           ],
@@ -213,13 +213,6 @@ module.exports = {
             "/developing/modules/spec-mint",
             "/developing/modules/spec-incentives",
             "/developing/modules/spec-pool-incentives"
-          ],
-          collapsable: true,
-        },
-        {
-          title: 'Web Developer Guide',
-          children: [
-            '/developing/web-dev-guide'
           ],
           collapsable: true,
         },
