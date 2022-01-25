@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
+	"github.com/MonikaCat/osmosis/v6/x/claim/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

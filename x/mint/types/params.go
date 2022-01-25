@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
+	epochtypes "github.com/MonikaCat/osmosis/v6/x/epochs/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	epochtypes "github.com/osmosis-labs/osmosis/v6/x/epochs/types"
 	yaml "gopkg.in/yaml.v2"
 )
 

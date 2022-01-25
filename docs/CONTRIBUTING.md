@@ -22,7 +22,7 @@ Osmo Docs requires everyone, without exception, to submit doc-change proposals b
 
 To contribute a doc-change proposal, use the following workflow:
 
-1. [Fork the repository](https://github.com/osmosis-labs/osmosis).
+1. [Fork the repository](https://github.com/MonikaCat/osmosis).
 1. [Add an upstream](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) so that you can update your fork.
 1. Clone your fork to your computer.
 1. Create a branch and name it appropriately.

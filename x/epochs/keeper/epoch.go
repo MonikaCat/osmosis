@@ -1,9 +1,9 @@
 package keeper
 
 import (
+	"github.com/MonikaCat/osmosis/v6/x/epochs/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gogo/protobuf/proto"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/types"
 )
 
 // GetEpochInfo returns epoch info by identifier

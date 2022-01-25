@@ -30,7 +30,7 @@ Clone the osmosis repo, checkout and install v6.0.0:
 
 ```bash
 cd $HOME
-git clone https://github.com/osmosis-labs/osmosis
+git clone https://github.com/MonikaCat/osmosis
 cd osmosis
 git checkout v6.0.0
 make install

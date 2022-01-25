@@ -87,7 +87,7 @@ To prepare for the upgrade, you need to create some folders, and build and insta
 
 ```
 mkdir -p ~/.osmosisd/cosmovisor/upgrades/v5/bin
-git clone https://github.com/osmosis-labs/osmosis
+git clone https://github.com/MonikaCat/osmosis
 cd osmosis
 git checkout v5.0.0
 make build

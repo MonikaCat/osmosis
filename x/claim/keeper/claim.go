@@ -3,11 +3,11 @@ package keeper
 import (
 	"fmt"
 
+	"github.com/MonikaCat/osmosis/v6/x/claim/types"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/gogo/protobuf/proto"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/types"
 )
 
 // GetModuleAccountBalance gets the airdrop coin balance of module account

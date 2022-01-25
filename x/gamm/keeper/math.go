@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/osmosis-labs/osmosis/v6/osmomath"
+	"github.com/MonikaCat/osmosis/v6/osmomath"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

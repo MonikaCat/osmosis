@@ -69,7 +69,7 @@ Welcome to the official documentation for Osmosis, an advanced automated market 
       Chat with the Osmosis community on Discord
     </div>
   </a>
-  <a href="https://github.com/osmosis-labs/osmosis" class="card lg" target="_blank">
+  <a href="https://github.com/MonikaCat/osmosis" class="card lg" target="_blank">
     <img src="img/github.svg">
     <div class="title">
     Found an Issue? 

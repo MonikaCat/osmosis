@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/require"
 	yaml "gopkg.in/yaml.v2"
 
+	appParams "github.com/MonikaCat/osmosis/v6/app/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	appParams "github.com/osmosis-labs/osmosis/v6/app/params"
 )
 
 var ymlAssetTest = []PoolAsset{

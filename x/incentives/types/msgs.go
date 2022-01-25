@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
+	lockuptypes "github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	lockuptypes "github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 )
 
 // constants

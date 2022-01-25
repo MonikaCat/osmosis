@@ -6,6 +6,11 @@ import (
 	"fmt"
 	"math/rand"
 
+	"github.com/MonikaCat/osmosis/v6/x/lockup/client/cli"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/client/rest"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/keeper"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/simulation"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
@@ -15,11 +20,6 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/client/cli"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/client/rest"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/keeper"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/simulation"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 )

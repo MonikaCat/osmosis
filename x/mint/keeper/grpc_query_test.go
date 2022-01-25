@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
+	simapp "github.com/MonikaCat/osmosis/v6/app"
+	"github.com/MonikaCat/osmosis/v6/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	simapp "github.com/osmosis-labs/osmosis/v6/app"
-	"github.com/osmosis-labs/osmosis/v6/x/mint/types"
 )
 
 type MintTestSuite struct {

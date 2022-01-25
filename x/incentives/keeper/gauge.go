@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
+	epochtypes "github.com/MonikaCat/osmosis/v6/x/epochs/types"
+	"github.com/MonikaCat/osmosis/v6/x/incentives/types"
+	lockuptypes "github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gogo/protobuf/proto"
-	epochtypes "github.com/osmosis-labs/osmosis/v6/x/epochs/types"
-	"github.com/osmosis-labs/osmosis/v6/x/incentives/types"
-	lockuptypes "github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 	db "github.com/tendermint/tm-db"
 )
 

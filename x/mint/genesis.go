@@ -1,9 +1,9 @@
 package mint
 
 import (
+	"github.com/MonikaCat/osmosis/v6/x/mint/keeper"
+	"github.com/MonikaCat/osmosis/v6/x/mint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v6/x/mint/keeper"
-	"github.com/osmosis-labs/osmosis/v6/x/mint/types"
 )
 
 // InitGenesis new mint genesis

@@ -9,6 +9,10 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
+	"github.com/MonikaCat/osmosis/v6/app"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/client/cli"
+	lockuptestutil "github.com/MonikaCat/osmosis/v6/x/lockup/client/testutil"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/crypto/hd"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
@@ -16,10 +20,6 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-	"github.com/osmosis-labs/osmosis/v6/app"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/client/cli"
-	lockuptestutil "github.com/osmosis-labs/osmosis/v6/x/lockup/client/testutil"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 )
 
 type IntegrationTestSuite struct {

@@ -4,12 +4,12 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
+	gammkeeper "github.com/MonikaCat/osmosis/v6/x/gamm/keeper"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	distrkeeper "github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	gammkeeper "github.com/osmosis-labs/osmosis/v6/x/gamm/keeper"
 
+	gammtypes "github.com/MonikaCat/osmosis/v6/x/gamm/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
-	gammtypes "github.com/osmosis-labs/osmosis/v6/x/gamm/types"
 )
 
 func CreateUpgradeHandler(mm *module.Manager, configurator module.Configurator,

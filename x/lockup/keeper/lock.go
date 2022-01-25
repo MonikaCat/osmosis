@@ -5,11 +5,11 @@ import (
 	"sort"
 	"time"
 
+	"github.com/MonikaCat/osmosis/v6/store"
+	"github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gogo/protobuf/proto"
-	"github.com/osmosis-labs/osmosis/v6/store"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 	db "github.com/tendermint/tm-db"
 )
 

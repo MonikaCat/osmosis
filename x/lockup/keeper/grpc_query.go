@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
+	"github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 )
 
 var _ types.QueryServer = Keeper{}

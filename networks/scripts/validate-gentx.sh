@@ -48,7 +48,7 @@ else
 
     echo "...........Init Osmosis.............."
 
-    git clone https://github.com/osmosis-labs/osmosis
+    git clone https://github.com/MonikaCat/osmosis
     cd osmosis
     git checkout gentx-launch
     make build

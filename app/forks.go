@@ -1,9 +1,9 @@
 package app
 
 import (
+	v3 "github.com/MonikaCat/osmosis/v6/app/upgrades/v3"
+	v6 "github.com/MonikaCat/osmosis/v6/app/upgrades/v6"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v3 "github.com/osmosis-labs/osmosis/v6/app/upgrades/v3"
-	v6 "github.com/osmosis-labs/osmosis/v6/app/upgrades/v6"
 )
 
 // BeginBlockForks is intended to be ran in

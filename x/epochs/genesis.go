@@ -3,9 +3,9 @@ package epochs
 import (
 	"time"
 
+	"github.com/MonikaCat/osmosis/v6/x/epochs/keeper"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/keeper"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

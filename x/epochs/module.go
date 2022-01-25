@@ -14,16 +14,16 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/MonikaCat/osmosis/v6/x/epochs/client/cli"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/client/rest"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/keeper"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/simulation"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/client/cli"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/client/rest"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/keeper"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/simulation"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/types"
 )
 
 var (

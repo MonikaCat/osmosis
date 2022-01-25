@@ -1,4 +1,4 @@
-module github.com/osmosis-labs/osmosis/v6
+module github.com/MonikaCat/osmosis/v6
 
 go 1.17
 

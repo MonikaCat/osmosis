@@ -12,7 +12,7 @@ Then exit and re-enter your shell.
 
 **Install Osmosis and check that it is on $PATH**
 ```bash
-git clone https://github.com/osmosis-labs/osmosis
+git clone https://github.com/MonikaCat/osmosis
 cd osmosis
 git checkout v3.1.0
 make install

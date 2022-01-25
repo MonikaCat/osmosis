@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
 
-	"github.com/osmosis-labs/osmosis/v6/x/txfees/keeper"
+	"github.com/MonikaCat/osmosis/v6/x/txfees/keeper"
 )
 
 func (suite *KeeperTestSuite) TestFeeDecorator() {

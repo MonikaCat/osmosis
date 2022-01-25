@@ -6,14 +6,14 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 
+	"github.com/MonikaCat/osmosis/v6/app"
+	"github.com/MonikaCat/osmosis/v6/app/params"
+	"github.com/MonikaCat/osmosis/v6/x/claim/client/cli"
+	"github.com/MonikaCat/osmosis/v6/x/claim/types"
+	claimtypes "github.com/MonikaCat/osmosis/v6/x/claim/types"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v6/app"
-	"github.com/osmosis-labs/osmosis/v6/app/params"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/client/cli"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/types"
-	claimtypes "github.com/osmosis-labs/osmosis/v6/x/claim/types"
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 )

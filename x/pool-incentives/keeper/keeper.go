@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"time"
 
+	gammtypes "github.com/MonikaCat/osmosis/v6/x/gamm/types"
+	incentivestypes "github.com/MonikaCat/osmosis/v6/x/incentives/types"
+	lockuptypes "github.com/MonikaCat/osmosis/v6/x/lockup/types"
+	"github.com/MonikaCat/osmosis/v6/x/pool-incentives/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	gammtypes "github.com/osmosis-labs/osmosis/v6/x/gamm/types"
-	incentivestypes "github.com/osmosis-labs/osmosis/v6/x/incentives/types"
-	lockuptypes "github.com/osmosis-labs/osmosis/v6/x/lockup/types"
-	"github.com/osmosis-labs/osmosis/v6/x/pool-incentives/types"
 	"github.com/tendermint/tendermint/libs/log"
 )
 

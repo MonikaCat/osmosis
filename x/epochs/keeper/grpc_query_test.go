@@ -4,7 +4,7 @@ import (
 	gocontext "context"
 	"time"
 
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/types"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryEpochInfos() {

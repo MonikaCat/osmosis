@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/MonikaCat/osmosis/v6/x/claim/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/types"
 	"github.com/spf13/cobra"
 )
 

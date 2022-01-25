@@ -4,8 +4,8 @@ import (
 	"testing"
 	time "time"
 
+	lockuptypes "github.com/MonikaCat/osmosis/v6/x/lockup/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	lockuptypes "github.com/osmosis-labs/osmosis/v6/x/lockup/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 )

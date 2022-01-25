@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/MonikaCat/osmosis/v6/v043_temp/address"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/osmosis-labs/osmosis/v6/v043_temp/address"
 )
 
 // PoolI defines an interface for pools that hold tokens.

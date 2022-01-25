@@ -14,9 +14,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
+	"github.com/MonikaCat/osmosis/v6/app"
+	minttypes "github.com/MonikaCat/osmosis/v6/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/osmosis-labs/osmosis/v6/app"
-	minttypes "github.com/osmosis-labs/osmosis/v6/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

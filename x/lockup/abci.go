@@ -3,8 +3,8 @@ package lockup
 import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/MonikaCat/osmosis/v6/x/lockup/keeper"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/osmosis-labs/osmosis/v6/x/lockup/keeper"
 )
 
 // BeginBlocker is called on every block

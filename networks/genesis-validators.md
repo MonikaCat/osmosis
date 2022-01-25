@@ -66,10 +66,10 @@ go version
 
 ### Get Osmosis Source Code
 
-Use git to retrieve Osmosis source code from the [official repo](https://github.com/osmosis-labs/osmosis), and checkout the `gentx-launch` tag, which contains the latest stable release.
+Use git to retrieve Osmosis source code from the [official repo](https://github.com/MonikaCat/osmosis), and checkout the `gentx-launch` tag, which contains the latest stable release.
 
 ```sh
-git clone https://github.com/osmosis-labs/osmosis
+git clone https://github.com/MonikaCat/osmosis
 cd osmosis
 git checkout gentx-launch
 ```
@@ -296,12 +296,12 @@ These examples are written targeting an Ubuntu 20.04 system.  Relevant changes t
 
 ### Update osmosisd to v1.0.0
 
-For the gentx creation, we used the `gentx-launch` branch of the [Osmosis codebase](https://github.com/osmosis-labs/osmosis).
+For the gentx creation, we used the `gentx-launch` branch of the [Osmosis codebase](https://github.com/MonikaCat/osmosis).
 
 For launch, please update to the `v1.0.1` tag and rebuild your binaries. (The `v1.0.0` tag is also fine, `v1.0.1` just fixes a bug in displaying the version. The state machine for the two versions are identical)
 
 ```sh
-git clone https://github.com/osmosis-labs/osmosis
+git clone https://github.com/MonikaCat/osmosis
 cd osmosis
 git checkout v1.0.1
 

@@ -3,13 +3,13 @@ package gamm_test
 import (
 	"testing"
 
+	osmoapp "github.com/MonikaCat/osmosis/v6/app"
+	appparams "github.com/MonikaCat/osmosis/v6/app/params"
+	"github.com/MonikaCat/osmosis/v6/x/gamm"
+	"github.com/MonikaCat/osmosis/v6/x/gamm/types"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/simapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	osmoapp "github.com/osmosis-labs/osmosis/v6/app"
-	appparams "github.com/osmosis-labs/osmosis/v6/app/params"
-	"github.com/osmosis-labs/osmosis/v6/x/gamm"
-	"github.com/osmosis-labs/osmosis/v6/x/gamm/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto/ed25519"

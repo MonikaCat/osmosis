@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
+	simapp "github.com/MonikaCat/osmosis/v6/app"
+	"github.com/MonikaCat/osmosis/v6/x/claim"
+	"github.com/MonikaCat/osmosis/v6/x/claim/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	simapp "github.com/osmosis-labs/osmosis/v6/app"
-	"github.com/osmosis-labs/osmosis/v6/x/claim"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"

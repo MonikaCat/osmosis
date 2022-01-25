@@ -3,10 +3,10 @@ package claim
 import (
 	"fmt"
 
+	"github.com/MonikaCat/osmosis/v6/x/claim/keeper"
+	"github.com/MonikaCat/osmosis/v6/x/claim/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/keeper"
-	"github.com/osmosis-labs/osmosis/v6/x/claim/types"
 )
 
 // NewHandler returns claim module messages

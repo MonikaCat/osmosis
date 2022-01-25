@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/MonikaCat/osmosis/v6/app/params"
 	"github.com/cosmos/cosmos-sdk/x/crisis"
-	"github.com/osmosis-labs/osmosis/v6/app/params"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/client"
@@ -33,7 +33,7 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	osmosis "github.com/osmosis-labs/osmosis/v6/app"
+	osmosis "github.com/MonikaCat/osmosis/v6/app"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the

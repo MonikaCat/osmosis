@@ -1,10 +1,10 @@
 package keeper
 
 import (
+	"github.com/MonikaCat/osmosis/v6/x/txfees/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/gogo/protobuf/proto"
-	"github.com/osmosis-labs/osmosis/v6/x/txfees/types"
 )
 
 // ConvertToBaseToken converts a fee amount in a whitelisted fee token to the base fee token amount

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	simapp "github.com/osmosis-labs/osmosis/v6/app"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs"
-	"github.com/osmosis-labs/osmosis/v6/x/epochs/types"
+	simapp "github.com/MonikaCat/osmosis/v6/app"
+	"github.com/MonikaCat/osmosis/v6/x/epochs"
+	"github.com/MonikaCat/osmosis/v6/x/epochs/types"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )

@@ -75,7 +75,7 @@ If you need to verify the base denom of an IBC asset, you can use `{REST Endpoin
 /ibc/applications/transfer/v1beta1/denom_traces/{hash}` for one specific IBC denom. (If you need an RPC/REST endpoint for Osmosis, [Figment DataHub](https://datahub.figment.io) provides a free service for up to 100k requests/day.)
 
 ### 4. Creating a pool on Osmosis
-Please refer to the [`create-pool` transaction example on the Osmosis repository](https://github.com/osmosis-labs/osmosis/tree/main/x/gamm#create-pool) on how to create a pool using your IBC tokens.
+Please refer to the [`create-pool` transaction example on the Osmosis repository](https://github.com/MonikaCat/osmosis/tree/main/x/gamm#create-pool) on how to create a pool using your IBC tokens.
 
 Recommended are:
 * 50:50 OSMO-Token pool with 0.2% swap fee and 0% exit fee

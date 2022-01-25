@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
+	epochstypes "github.com/MonikaCat/osmosis/v6/x/epochs/types"
+	"github.com/MonikaCat/osmosis/v6/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	epochstypes "github.com/osmosis-labs/osmosis/v6/x/epochs/types"
-	"github.com/osmosis-labs/osmosis/v6/x/mint/types"
 )
 
 func (k Keeper) BeforeEpochStart(ctx sdk.Context, epochIdentifier string, epochNumber int64) {
