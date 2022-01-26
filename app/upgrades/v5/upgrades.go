@@ -10,13 +10,13 @@ import (
 	gammkeeper "github.com/MonikaCat/osmosis/v6/x/gamm/keeper"
 	txfeeskeeper "github.com/MonikaCat/osmosis/v6/x/txfees/keeper"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	connectionkeeper "github.com/cosmos/ibc-go/v2/modules/core/03-connection/keeper"
+	connectionkeeper "github.com/cosmos/ibc-go/modules/core/03-connection/keeper"
 
 	"github.com/MonikaCat/osmosis/v6/x/txfees"
 
 	txfeestypes "github.com/MonikaCat/osmosis/v6/x/txfees/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	ibcconnectiontypes "github.com/cosmos/ibc-go/v2/modules/core/03-connection/types"
+	ibcconnectiontypes "github.com/cosmos/ibc-go/modules/core/03-connection/types"
 	bech32ibctypes "github.com/osmosis-labs/bech32-ibc/x/bech32ibc/types"
 )
 
